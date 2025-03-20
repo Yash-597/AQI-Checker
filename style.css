@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/bakground-img.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+h1 {
+    font-size: 40px;
+    color: palegreen;
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    outline: none;
+    text-align: center;
+    background: #ffffff33;
+    color: white;
+    transition: 0.3s ease-in-out;
+    margin-top: 50px;
+}
+
+
+input[type="text"]:focus {
+    border-color: #00e400;
+    background: #ffffff80;
+}
+
+input::placeholder {
+    color: black;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    background: #00e400;
+    color: white;
+    transition: 0.3s;
+    margin-top: 20px;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button:hover {
+    background: #008c00;
+}
+
+#locationButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 80px; /* Adjust for proper spacing */
+    height: 80px;
+    padding: 5px;
+    border: 4px solid #69b6e9; /* Blue border */
+    border-radius: 50%;
+    cursor: pointer;
+    background: rgb(211, 238, 89);
+    transition: 0.3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+}
+
+#locationButton:hover {
+    border-color: #0077cc;
+}
+
+#locationButton span {
+    font-size: 10px;
+    font-weight: bold;
+    color: black;
+    margin-top: 3px; 
+}
+
+
+.dark-mode {
+    background-image: url('images/dark-background.jpg');
+    background-size: cover;
+}
+
+#darkModeToggle{
+    position: fixed;
+    top : 4px;
+    right : 15px;
+    background: gray;
+}
+
+/* .dark-mode button {
+    background: #444;
+    color: white;
+} */
+
+.dark-mode button:hover {
+    background: #666;
+}
+
+
+.aqi-box {
+    margin: 80px auto 20px auto; 
+    width: fit-content; 
+    padding: 20px 40px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+    display: block; 
+    transition: 0.5s ease-in-out;
+    box-shadow: 0px 4px 10px #00000033;
+}
+
+.aqi-box:hover {
+    transform: scale(1.05); 
+    box-shadow: 0px 6px 15px #00000055; 
+}
+
+
+.good { background-color: #00e400; color: #fff; }  
+.moderate { background-color: #ffff00; color: #000; }
+.unhealthy { background-color: #ff7e00; color: #fff; }
+.very-unhealthy { background-color: #ff0000; color: #fff; }
+.hazardous { background-color: #7e0023; color: #fff; }
+
+

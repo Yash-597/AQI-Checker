@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AQI Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🌍 Real-Time AQI Checker</h1>
+
+    <input type="text" id="cityInput" placeholder="Enter city name...">
+    <button onclick="fetchAQI()">Get AQI</button>
+
+    <button id="locationButton" onclick="getLocationAQI()">
+        📍<span>My Location</span>
+    </button>
+    
+    <button id="darkModeToggle">🌙</button>
+
+    <div id="aqiBox" class="aqi-box">
+        <p id="aqiValue"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
