@@ -72,7 +72,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const darkModeToggle = document.getElementById("darkModeToggle");
     const body = document.body;
 
-    // Check if dark mode was previously enabled
     if (localStorage.getItem("darkMode") === "enabled") {
         body.classList.add("dark-mode");
         darkModeToggle.innerText = "☀️"; 
@@ -80,7 +79,6 @@ document.addEventListener("DOMContentLoaded", () => {
         darkModeToggle.innerText = "🌙"; 
     }
 
-    // Toggle dark mode and switch icons
     darkModeToggle.addEventListener("click", () => {
         body.classList.toggle("dark-mode");
 
