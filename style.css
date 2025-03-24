@@ -6,6 +6,8 @@ body {
     background-image: url('images/light-background\ \ .webp');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
     color: white;
 }
 
@@ -106,6 +108,9 @@ button:hover {
 .dark-mode {
     background-image: url('images/dark-background\ \ .webp');
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #darkModeToggle{
@@ -184,7 +189,7 @@ button:hover {
     }
 
     #locationButton span {
-        font-size: 8px;
+        font-size: 6px;
         font-weight: bold;
         color: black;
         margin-top: 3px; 
