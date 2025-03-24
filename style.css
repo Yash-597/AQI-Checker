@@ -137,7 +137,6 @@ button:hover {
     box-shadow: 0px 6px 15px #00000055; 
 }
 
-
 .good { background-color: #00e400; color: #fff; }  
 .moderate { background-color: #ffff00; color: #000; }
 .unhealthy { background-color: #ff7e00; color: #fff; }
@@ -183,4 +182,12 @@ button:hover {
         height: 50px;
         font-size: 10px;
     }
+
+    #locationButton span {
+        font-size: 8px;
+        font-weight: bold;
+        color: black;
+        margin-top: 3px; 
+    }
+
 }
